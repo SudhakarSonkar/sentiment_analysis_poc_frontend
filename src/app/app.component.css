@@ -1,0 +1,22 @@
+.w3-sidebar a {
+    font-family: "Roboto", sans-serif
+  }
+
+nav{
+    z-index:3;
+    width:250px;
+}
+
+.w3-display-container{
+    padding: 12% 0 0% 25%;
+}
+
+table{
+    width:40%; 
+    border:1px solid black; 
+    margin-left: 10%;
+}
+
+a{
+    font-weight:bold
+}
