@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -21,10 +20,10 @@
   <!-- Text header -->
   <div class="w3-display-container w3-container">
     
-    <form>
-      <textarea rows="6" name="text" [(ngModel)]="name" cols="70" placeholder="Enter your text here..."></textarea>
+    <form enctype="multipart/form-data">
+      <textarea rows="6" name="text" [(ngModel)]="text" cols="70" placeholder="Enter your text here..."></textarea>
       <br />
-      <button type="button" class="btn btn-danger" >
+      <button type="button" class="btn btn-danger" (click)="getResult()">
         Submit
       </button>
     </form>
@@ -34,8 +33,9 @@
     <ng-container *ngIf="visible">
       <div class="bg-white shadow-sm p-3">
       <table>
+        {{output}}
 
-        <tr>
+        <!-- <tr>
           <th>Total Reviews: </th>
           <td>{{output.total_reviews}}</td>
         </tr>
@@ -58,7 +58,7 @@
         <tr>
           <th>Overall Sentiment Score: </th>
           <td>{{output.result}}</td>
-        </tr>
+        </tr> -->
 
       </table>
 
